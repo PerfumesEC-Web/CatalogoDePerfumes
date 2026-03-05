@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>Catálogo de Perfumes EC</title>
+
+<meta name="description" content="Catálogo de perfumes para hombre y mujer. Armaf, Al Haramain, Hugo Boss y más.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Perfumes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brandbox">
+        <div class="logo">
+          <img src="img/logo21.png" alt="Logo" onerror="this.style.display='none'">
+          <div class="logo-fallback"></div>
+        </div>
+
+        <div class="brandtext">
+          <div class="storename">Tu Tienda de Perfumes</div>
+          <div class="tagline">Perfumes de hombre & mujer • Originales • Envíos</div>
+        </div>
+      </div>
+
+      <a class="pill" href="#catalogo">Ver catálogo</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-left">
+
+            <div class="hero-cta">
+              <a class="btn primary" href="#catalogo">Explorar perfumes</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-num" id="countPerfumes">0</div>
+                <div class="stat-label">Perfumes</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Atención</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">⭐</div>
+                <div class="stat-label">Top ventas</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="catalogo" class="section">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Los mejores precios del Ecuador</h2>
+          <p>Busca por nombre, marca o notas.</p>
+        </div>
+
+        <div class="controls">
+          <input id="search" type="search" placeholder="Buscar (nombre, marca, notas...)" />
+          <select id="filterBrand">
+            <option value="">Todas las marcas</option>
+          </select>
+          <select id="sort">
+            <option value="featured">Ordenar: destacados</option>
+            <option value="priceAsc">Precio: menor a mayor</option>
+            <option value="priceDesc">Precio: mayor a menor</option>
+            <option value="nameAsc">Nombre: A → Z</option>
+          </select>
+        </div>
+
+        <section id="grid" class="grid"></section>
+        <p id="empty" class="empty hidden">No se encontraron perfumes con esos filtros.</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Tu tienda — Catálogo</small>
+      <small class="muted"></small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
