@@ -274,7 +274,7 @@ const perfumes = [
     id: 25,
     name: "Hawas Fire",
     brand: "Rasasi",
-    price: 70,
+    price: 75,
     ml: 100,
     gender: "Hombre",
     notes: ["Acuático", "Dulce", "Intenso"],
@@ -689,4 +689,5 @@ populateBrands();
 render(perfumes);
 
 // Events
+
 [$search, $filterBrand, $sort].forEach(el => el.addEventListener("input", applyFilters));
