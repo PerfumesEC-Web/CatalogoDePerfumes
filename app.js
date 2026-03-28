@@ -64,7 +64,7 @@ const perfumes = [
     name: "Club de Nuit Intense Man",
     brand: "Armaf",
     price: 60,
-    ml: 105,
+    ml: 100,
     gender: "Hombre",
     notes: ["Piña", "Limón", "Ahumado"],
     desc: "Perfume fresco y potente inspirado en Aventus.",
